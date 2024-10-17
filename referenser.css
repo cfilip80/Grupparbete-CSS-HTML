@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+header nav ul, footer nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li, footer nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a, footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#referenser {
+    width: 60%;
+    float: left;
+}
+
+#recensioner {
+    width: 35%;
+    float: right;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0,1);
+}
+
+.referens-item {
+    background-color: #e8e8e8;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #333;
+}
+
+.referens-item h3 {
+    margin: 0 0 5px;
+}
+
+.recension {
+    background-color: #e8e8e8;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #333;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: 0;
+    width: 100%;
+}
+
+footer img {
+    height: 50px;
+}
