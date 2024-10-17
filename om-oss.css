@@ -1,23 +1,25 @@
-body {
-    display: flex;
-    align-items: center;
-    height: 100vw;
-    width: 100vw;
-    background-color:rgb(70, 33, 206);
-    box-sizing: border-box;
-    margin: 0;
+body{
+    display:flex;
+    justify-content: center;
 }
 
-.main{
+main{
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
     
 }
 
+section{
+    width: 100%;
+    text-align: center;
+}
+
+
 .employees{
     background-color: beige;
     width: 30%;
     box-sizing: border-box;
+    margin-bottom: 20px;
 
 }
