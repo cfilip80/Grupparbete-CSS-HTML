@@ -124,18 +124,4 @@ body {
     margin: 0;
 }
 
-.om-oss{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    
-}
-
-.employees{
-    
-    background-color: beige;
-    width: 30%;
-    box-sizing: border-box;
-
-}
 
