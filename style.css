@@ -114,4 +114,28 @@ nav ul li a {
     width: 50%;
     border: 1px solid black;
 }
+body {
+    display: flex;
+    align-items: center;
+    height: 100vw;
+    width: 100vw;
+    background-color:rgb(70, 33, 206);
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.om-oss{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    
+}
+
+.employees{
+    
+    background-color: beige;
+    width: 30%;
+    box-sizing: border-box;
+
+}
 
