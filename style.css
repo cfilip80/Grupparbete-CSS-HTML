@@ -115,11 +115,3 @@ nav ul li a {
     border: 1px solid black;
 }
 
-.employees{
-    background-color: beige;
-    flex-direction: row;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-
-}
