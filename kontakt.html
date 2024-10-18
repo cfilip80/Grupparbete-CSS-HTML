@@ -3,59 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kontakt.css">
+    <link rel="stylesheet" href="om-oss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <img src="" alt="Här är en logga">
-        <nav>
-            <ul>
-                <li><a href="#index.html">Startsida</a></li>
-                <li><a href="#produkter.html">Våra produkter</a></li>
-                <li><a href="#referenser.html">Referenser</a></li> 
-                <li><a href="#Om oss">Om oss</a></li>
-                <li><a href="#kontakt.html">Kontakta oss</a></li>
-            </ul>
-        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Sök...">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="header-icon">
+        <img class="fruit-logo" src="/images/fruit-logo.jpg">
+        </div>
+        <div class="shopping-cart">
+        <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:36px;color:#479a71"></i></a>
+        </div>
     </header>
+    <nav class="nav-bar">
+        <a href="index.html" class="active">INDEX</a>
+        <a href="produkter.html">PRODUKTER</a>
+        <a href="referenser.html">REFERENSER</a>
+        <a href="om-oss.html">OM OSS</a>
+        <a href="kontakt.html">KONTAKTA OSS</a>
+    </nav>
     <main>
-        <articel>
+        <article>
             <h3>Kontakta oss</h3>
             <input type="text" placeholder="För och efternamn">
             <input type="email" placeholder="E-postadress">
             <select>
-                <opiton> value="produkter" Produkter</opiton>
-                <opiton>Leverans</opiton>
-                <opiton>Fakturering</opiton>
-                <opiton>Försäljning</opiton>
+                <option value="" disabled selected>Ämne</option>
+                <option value="produkter"> Produkter</option>
+                <option value="leverans">Leverans</option>
+                <option value="fakturering">Fakturering</option>
+                <option value="försäljning">Försäljning</option>
             </select>
             <input type="text" placeholder="Meddelande">
             <input type="submit">
-        </articel>
-        <articel>
+        </article>
+        <article>
             <h3>Besök oss här</h3>
             <h4>Fruktbolaget AB</h4>
             <h4>Tomtebodavägen 3A, 171 65, Solna</h4>
             <h3>Eller ring oss på</h3>
             <h4>070-123 45 67</h4>
-        </articel>
+        </article>
 
 
     </main>
 
-    <footer>
-        <img src="" alt="Här är en logga">
-        <nav>
-            <ul>
-                <li><a href="#index.html">Startsida</a></li>
-                <li><a href="#produkter.html">Våra produkter</a></li>
-                <li><a href="#referenser.html">Referenser</a></li> 
-                <li><a href="#Om oss">Om oss</a></li>
-                <li><a href="#kontakt.html">Kontakta oss</a></li>
-            </ul>
-        </nav>
-    </footer>
+    <footer></footer>
     
 </body>
 </html>

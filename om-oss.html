@@ -4,26 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="om-oss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Document</title>
 </head>
 <body class="om-oss-body">
     <header>
-        <img src="" alt="Här är en logga">
-        <nav>
-            <ul>
-                <li><a href="#index.html">Startsida</a></li>
-                <li><a href="#produkter.html">Våra produkter</a></li>
-                <li><a href="#referenser.html">Referenser</a></li> 
-                <li><a href="#Om oss">Om oss</a></li>
-                <li><a href="#kontakt.html">Kontakta oss</a></li>
-            </ul>
-        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Sök...">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="header-icon">
+        <img class="fruit-logo" src="/images/fruit-logo.jpg">
+        </div>
+        <div class="shopping-cart">
+        <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:36px;color:#479a71"></i></a>
+        </div>
     </header>
+    <nav class="nav-bar">
+        <a href="index.html" class="active">INDEX</a>
+        <a href="produkter.html">PRODUKTER</a>
+        <a href="referenser.html">REFERENSER</a>
+        <a href="om-oss.html">OM OSS</a>
+        <a href="kontakt.html">KONTAKTA OSS</a>
+    </nav>
     <main class="om-oss-main">
         <section class="om-oss-section">
             <h2>Vi säljer ekologisk frukt i värdsklass odlat nära dig</h2>
-        </section>
-        <section class="om-oss-section">
             <p id="historik">Fruktbolaget grundades 2016 av Christian Filipsson med en vision om att erbjuda svenska konsumenter högkvalitativ och lokalt producerad frukt. Med ett starkt fokus på hållbarhet och nära samarbeten med svenska 
                 odlare har företaget vuxit stadigt sedan starten. Det började som en mindre verksamhet, men tack vare företagets fokus på kvalitet och pålitliga leveranser har det expanderat och nått kunder över hela Sverige.
                 Genom effektiv logistik och långsiktiga kundrelationer har Fruktbolaget etablerat sig som en pålitlig aktör på marknaden. Företaget är idag känt för sitt engagemang för miljö och lokalt samarbete, och fortsätter 
@@ -34,7 +41,7 @@
         </section>
 
         <article class="employees">
-            <img src="" alt="det här är en bild">
+            <img src="images/christian.jpg" alt="det här är en bild">
             <h3>VD, Christian Filipsson</h3>
             <h4>christian.filipsson@fruktbolaget.se</h4>
             <p> Christian är företagets grundare och VD, med över 10 års erfarenhet inom livsmedelsindustrin. Han brinner för hållbarhet och ser till att företaget alltid ligger i framkant när det kommer till ekologiska produkter.</p>    
@@ -71,18 +78,7 @@
         </article>
     </main>
 
-    <footer>
-        <img src="" alt="Här är en logga">
-        <nav>
-            <ul>
-                <li><a href="#index.html">Startsida</a></li>
-                <li><a href="#produkter.html">Våra produkter</a></li>
-                <li><a href="#referenser.html">Referenser</a></li> 
-                <li><a href="#Om oss">Om oss</a></li>
-                <li><a href="#kontakt.html">Kontakta oss</a></li>
-            </ul>
-        </nav>
-    </footer>
+    <footer></footer>
     
 </body>
 </html>
