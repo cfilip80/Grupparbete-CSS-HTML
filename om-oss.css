@@ -1,16 +1,16 @@
-body{
+.om-oss-body{
     display:flex;
     justify-content: center;
 }
 
-main{
+.om-oss-main{
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
     
 }
 
-section{
+.om-oss-section{
     background-color:rgba(242, 241, 235, 0.7);
     width: 100%;
     text-align: center;
