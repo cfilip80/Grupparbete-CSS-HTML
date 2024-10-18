@@ -114,14 +114,25 @@ main {
 
 article {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 24%;
     height: 400px;
-    background-color: #FBFAEE;
+    background-color: #f2f2f2;
     border-radius: 20px;
     border: none;
     margin: 10px 0;
+}
+
+.like-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 30px;
 }
 
 article img {
