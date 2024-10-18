@@ -120,8 +120,10 @@ header {
 
 main {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
     height: 1000px;
     width: 85%;
     box-sizing: border-box;
@@ -135,6 +137,13 @@ main {
     text-align: center;
 }
 
+.article-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+}
+
 article {
     display: flex;
     flex-direction: column;
@@ -146,7 +155,11 @@ article {
     border-radius: 20px;
     border: 1px solid #f2f2f2;
     margin: 10px 0;
-    box-shadow: 0  2px 5px rgba(0, 0, 0, 0.2);
+}
+
+article:hover {
+    box-shadow: 0  10px 30px rgba(0, 0, 0, 0.5);
+    background-color: #f2f2f2;
 }
 
 .like-product {
@@ -204,10 +217,23 @@ footer {
     box-shadow: 0  2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.banner-wrap {
+.banner-container {
     display: flex;
-    height: 120px;
+    flex-direction: row;
+    height: 150px;
     width: 100%;
+}
+
+.banner {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+}
+
+.banner:hover {
+    box-shadow: 0  2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .reklam-banner {
@@ -215,6 +241,23 @@ footer {
     height: 100%;
     width: 100%;
     border: 1px solid black;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 60px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: #333333;
+}
+
+.nav-section h1 {
+    font-style: italic;
+    font-size: 28px;
 }
 
 .slide-show-wrap {
