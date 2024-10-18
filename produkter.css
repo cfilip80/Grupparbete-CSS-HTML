@@ -6,7 +6,7 @@ body {
     align-items: center;
     height: 100vw;
     width: 100vw;
-    background-color:antiquewhite;
+    background-color:white;
     box-sizing: border-box;
     margin: 0;
 }
@@ -27,6 +27,7 @@ header {
     height: 70px;
     width: 85%;
     background-color: #479a71;
+    border-radius: 20px;
 }
 
 .nav-bar a {
@@ -105,18 +106,30 @@ header {
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     height: 1000px;
-    width: 100%;
+    width: 85%;
     box-sizing: border-box;
 }
 
-header nav {
+article {
     display: flex;
-    width: 80%;
-    height: 40%;
-    background-color:cadetblue
+    justify-content: center;
+    align-items: center;
+    width: 24%;
+    height: 400px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    border: none;
+    margin: 10px 0;
 }
+
+article img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+  }
 
 .header-icons:nth-child(2) {
     margin: 0 75px 0 auto;
