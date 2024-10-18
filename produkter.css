@@ -122,7 +122,7 @@ article {
     background-color: white;
     border-radius: 20px;
     margin: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0  2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .like-product {
@@ -177,6 +177,7 @@ footer {
 .nav-bar {
     display: flex;
     justify-content: center;
+    box-shadow: 0  2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .banner-wrap {
