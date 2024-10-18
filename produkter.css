@@ -119,9 +119,9 @@ article {
     align-items: center;
     width: 24%;
     height: 400px;
-    background-color: #f2f2f2;
+    background-color: white;
     border-radius: 20px;
-    border: none;
+    border: 1px solid #f2f2f2;
     margin: 10px 0;
 }
 
@@ -129,10 +129,18 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: flex-end;
     height: 50px;
     width: 50px;
-    background-color: white;
+    background-color: #f2f2f2;
     border-radius: 30px;
+    margin: 10px 10px 0 0;
+}
+
+article a {
+    align-self: flex-end;
+    text-decoration: none;
+    color: black;
 }
 
 article img {
@@ -140,6 +148,17 @@ article img {
     height: 85%;
     object-fit: contain;
   }
+
+article input {
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+}
 
 .header-icons:nth-child(2) {
     margin: 0 75px 0 auto;
