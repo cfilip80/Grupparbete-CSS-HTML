@@ -125,6 +125,8 @@ main {
 .kontakt{
     background-color:white;
     width: 45%;
+    height: auto;
+    padding:10px;
     box-sizing: border-box;
     margin-bottom: 20px;
     border-radius: 20px;
@@ -136,20 +138,22 @@ main {
     justify-content: center;
 
 }
-#option-form{ /*den här koden fungerar inte*/
-    height: 50px;
+#option-form{ /*den här ser ful ut*/
+    height: 40px;
     width: 200px;
-    background-color: #f2f2f2;
-    
-   
+    margin-bottom: 10px;
 }
 
-#input-form{ /*den här koden fungerar inte*/
-    height: 50px;
-    width: 200px;
-    background-color: #f2f2f2;
-    
-   
+#input-form{ /*den här ser ful ut*/
+    height: 40px;
+    width: 350px;
+    margin-bottom: 10px;
+}
+
+#input-message{ /*den här ser ful ut*/
+    height: 150px;
+    width: 350px;
+    margin-bottom: 10px;
 }
 
 footer {
