@@ -49,7 +49,7 @@ header {
     height: 70px;
     width: 100%;
     background-color: #479a71;
-    box-shadow: 0  2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px  2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .nav-bar ul {
@@ -57,10 +57,6 @@ header {
     flex-direction: row;
     text-decoration: none;
     list-style: none;
-}
-
-li {
-    float: left;
 }
 
 .nav-bar a {
@@ -94,6 +90,39 @@ li {
 .nav-section h1 {
     font-style: italic;
     font-size: 28px;
+}
+
+.name-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.name-container h3 span {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    background-color: #479a71;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+}
+
+article div span {
+    /* font-style: italic; */
+    font-size: 20px;
+}
+
+
+.text-wrapper input {
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin: 10px 0 0 0;
 }
 
 .search-container {
@@ -179,9 +208,9 @@ main {
     margin: 0;
 }
 
-.article-wrapper article {
+/* .article-wrapper article {
     width: 100%
-}
+} */
 
 .article-wrapper p {
     text-align: center;
@@ -200,8 +229,8 @@ article {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 24%;
-    height: 400px;
+    width: auto;
+    height: auto;
     background-color: white;
     border-radius: 20px;
     border: 1px solid #f2f2f2;
@@ -228,7 +257,7 @@ article input {
     border-radius: 10px;
     outline: none;
     border: none;
-    margin-bottom: 20px;
+    margin: 10px 0 10px 0;
 }
 
 article:hover {
@@ -279,3 +308,17 @@ footer {
 } */
 
 
+.img-container {
+    display: flex;
+    margin: 0;
+}
+
+.span-container {
+    display: flex;
+    flex-shrink: 1;
+}
+
+.button-container {
+    display: flex;
+    flex-shrink: 1;
+}
