@@ -1,68 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="referenser.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Referenser</title>
 </head>
 <body>
     <header>
-        <img src="" alt="Här är en logga">
-        <nav>
-            <ul>
-                <li><a href="#index.html">Startsida</a></li>
-                <li><a href="#produkter.html">Våra produkter</a></li>
-                <li><a href="#referenser.html">Referenser</a></li> 
-                <li><a href="#Om oss">Om oss</a></li>
-                <li><a href="#kontakt.html">Kontakta oss</a></li>
-            </ul>
-        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Sök...">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="header-icon">
+            <img class="fruit-logo" src="/images/fruit-logo.jpg" alt="Fruktbolaget AB">
+        </div>
+        <div class="shopping-cart">
+            <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:36px;color:#479a71"></i></a>
+        </div>
     </header>
+    <nav class="nav-bar">
+        <a href="index.html">HEM</a>
+        <a href="produkter.html">PRODUKTER</a>
+        <a href="referenser.html">REFERENSER</a>
+        <a href="om-oss.html">OM OSS</a>
+        <a href="kontakt.html">KONTAKTA OSS</a>
+    </nav>
     <main>
-        <div class="nav-section">
+        <nav class="nav-section">
             <h1>Våra Referenser</h1>
-        </div>
-        
-        <div class="referens-container">
-            <div class="referens-lista">
-                <div class="referens-item">
-                    <p>Bybolaget: <br> "Fantastiskt företag att jobba med!"</p>
-                </div>
-                <div class="referens-item">
-                    <p>Sellholm ab: <br> "Tack för den fantastiska servicen."</p>
-                </div>
-                <div class="referens-item">
-                    <p>Träslöjdprodukter ab: <br> "Snabb och effektiv leverans varje gång."</p>
-                </div>
-            </div>
-
-            <div class="recensioner">
-                <div class="recension">
-                    <p>"Deras produkter är alltid färska och hållbara!" - Emma</p>
-                </div>
-                <div class="recension">
-                    <p>"Vi älskar fruktkorgarna vi får varje vecka." - Johan</p>
-                </div>
-                <div class="recension">
-                    <p>"Toppenservice och bra kundbemötande!" - Maria</p>
-                </div>
-            </div>
-        </div>
-                
-    </main>
-        
-    <footer>
-        <img src="" alt="Här är en logga">
-        <nav>
-            <ul>
-                <li><a href="#index.html">Startsida</a></li>
-                <li><a href="#produkter.html">Våra produkter</a></li>
-                <li><a href="#referenser.html">Referenser</a></li> 
-                <li><a href="#Om oss">Om oss</a></li>
-                <li><a href="#kontakt.html">Kontakta oss</a></li>
-            </ul>
         </nav>
-    </footer>
+        <div class="container">
+            <!-- Recensioner-sektion -->
+            <section id="recensioner">
+                <h2>Recensioner</h2>
+                <div class="reference-card">
+                    <h3>Anna Svensson</h3>
+                    <p>Betyg: ⭐⭐⭐⭐⭐</p>
+                    <p>Väldigt nöjd med köpet, rekommenderas starkt!</p>
+                </div>
+                <div class="reference-card">
+                    <h3>Johan Karlsson</h3>
+                    <p>Betyg: ⭐⭐⭐⭐☆</p>
+                    <p>Snabb leverans, men förpackningen var lite skadad.</p>
+                </div>
+                <div class="reference-card">
+                    <h3>Maria Johansson</h3>
+                    <p>Betyg: ⭐⭐⭐⭐⭐</p>
+                    <p>Fantastisk kundservice och utmärkt produktkvalitet!</p>
+                </div>
+                <div class="reference-card">
+                    <h3>Erik Pettersson</h3>
+                    <p>Betyg: ⭐⭐⭐⭐☆</p>
+                    <p>Bra produkter men leveransen tog lite längre tid än väntat.</p>
+                </div>
+            </section>
+
+            <!-- Formulär för att lämna nytt omdöme -->
+            <section id="lämna-omdöme">
+                <h2>Lämna ett nytt omdöme</h2>
+                <form action="submit_review.php" method="post">
+                    <label for="namn">Namn:</label>
+                    <input type="text" id="namn" name="namn" required>
+
+                    <label for="email">E-post:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="betyg">Betyg:</label>
+                    <select id="betyg" name="betyg" required>
+                        <option value="5">⭐⭐⭐⭐⭐</option>
+                        <option value="4">⭐⭐⭐⭐☆</option>
+                        <option value="3">⭐⭐⭐☆☆</option>
+                        <option value="2">⭐⭐☆☆☆</option>
+                        <option value="1">⭐☆☆☆☆</option>
+                    </select>
+
+                    <label for="omdome">Ditt omdöme:</label>
+                    <textarea id="omdome" name="omdome" rows="5" required></textarea>
+
+                    <button type="submit">Skicka omdöme</button>
+                </form>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
