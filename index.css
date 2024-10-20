@@ -26,6 +26,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     height: 100%;
+    /* margin-left: 150px; */
     flex: 1;
 }
 
@@ -129,7 +130,6 @@ header {
     border-radius: 30px;
     padding: 8px 12px;
 }
-
 .nav-section {
     display: flex;
     justify-content: center;

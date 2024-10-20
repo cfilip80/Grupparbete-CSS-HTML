@@ -38,14 +38,19 @@ header {
 }
 
 .nav-bar a:hover {
-    color:orangered;
+    color:#479a71;
+    background: white;
+    border-radius: 30px;
     text-decoration: underline;
+    padding: 8px 12px;
 
 }
 
-.active {
-    background-color: #4CAF50;
-    color: white;
+.nav-bar a.active {
+    color:#479a71;
+    background: white;
+    border-radius: 30px;
+    padding: 8px 12px;
 }
 
 .header-icon {
