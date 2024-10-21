@@ -3,58 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="kontakt.css">
     <link rel="stylesheet" href="om-oss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="search-container">
-            <input type="text" placeholder="Sök...">
-            <i class="fa fa-search"></i>
-        </div>
-        <div class="header-icon">
-        <img class="fruit-logo" src="/images/fruit-logo.jpg">
-        </div>
-        <div class="shopping-cart">
-        <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:36px;color:#479a71"></i></a>
-        </div>
-    </header>
-    <nav class="nav-bar">
-        <a href="index.html">INDEX</a>
-        <a href="produkter.html">PRODUKTER</a>
-        <a href="referenser.html">REFERENSER</a>
-        <a href="om-oss.html">OM OSS</a>
-        <a href="kontakt.html" class="active">KONTAKTA OSS</a>
-    </nav>
     <main>
-        <article class="kontakt">
-            <h3>Kontakta oss</h3>
-            <select id="option-form"> <!--Hela den här är FUL!-->
-                <option value="" disabled selected>Ämne</option>
-                <option value="produkter"> Produkter</option>
-                <option value="leverans">Leverans</option>
-                <option value="fakturering">Fakturering</option>
-                <option value="försäljning">Försäljning</option>
-            </select>
-            <input id="input-form" type="text" placeholder="För och efternamn">
-            <input id="input-form" type="email" placeholder="E-postadress"> 
-            <input id="input-message" type="text" placeholder="Meddelande"> <!--Måste expandera när man skriver, samt bli större by default-->
-            <input type="submit">
-        </article>
-        <article class="kontakt">
+        <article class="box">
             <h3>Besök oss här</h3>
-            <h4>Fruktbolaget AB</h4>
-            <h4>Tomtebodavägen 3A, 171 65, Solna</h4>
+            <p>Välkommen till Fruktbolaget AB! Du hittar oss på Tomtebodavägen 3A, 171 65 Solna. Kom gärna förbi för att upptäcka vårt fruktsortiment</p>
             <h3>Eller ring oss på</h3>
-            <h4>070-123 45 67</h4>
+            <p>Har du frågor, funderingar eller vill veta mer om vårt sortiment? Tveka inte att kontakta oss! Ring oss på 070-123 45 67, så hjälper vi dig med glädje. Vi ser fram emot att höra från dig och hjälpa dig hitta det du söker. Ditt nöje med vår frukt är vår högsta prioritet! Du kan också kontakta oss genom kontaktformuläret till vänster.</p>
         </article>
+        
+        <article class="box">
+            <h3>Kontakta oss</h3>
+                    <select id="option-form">
+                        <option value="" disabled selected>Ämne</option>
+                        <option value="produkter"> Produkter</option>
+                        <option value="leverans">Leverans</option>
+                        <option value="fakturering">Fakturering</option>
+                        <option value="försäljning">Försäljning</option>
+                    </select>
+                    
+                    <label for="namn">Förnamn och efternamn:</label>
+                    <input id="input-form" type="text">
 
+                    <label for="email">Din E-postadress:</label>
+                    <input id="input-form" type="email"> 
 
-    </main>
+                    <label for="text">Meddelande</label>
+                    <input id="input-message" type="text"> 
 
-    <footer></footer>
-    
+                    <button type="submit">Skicka</button>
+        </article>
+    </main>   
 </body>
 </html>
