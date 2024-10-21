@@ -76,7 +76,7 @@ header {
     height: 180px;
 }
 
-.shopping-cart {
+.icons-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -237,7 +237,7 @@ main {
     text-align: center;
 }
 
-.article-container {
+.row-container {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
