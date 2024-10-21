@@ -196,6 +196,11 @@ article:hover {
     margin-right: 20px;
 }
 
+.fa-heart, .fa-shopping-cart, .fa-user {
+    color: #479a71;
+    font-size: 36px;
+}
+
 .fa-search {
     transform: translateX(-200%);
 }
@@ -266,6 +271,16 @@ article:hover {
 .button-container {
     display: flex;
     flex-shrink: 1;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.logo-container img {
+    height: 180px;
 }
 
 footer {

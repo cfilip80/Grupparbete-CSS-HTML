@@ -66,6 +66,16 @@ header {
 
 }
 
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.logo-container img {
+    height: 180px;
+}
+
 .shopping-cart {
     display: flex;
     justify-content: flex-end;
