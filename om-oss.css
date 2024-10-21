@@ -36,11 +36,13 @@ p{
     width: 30%;
     margin-bottom: 20px;
     border-radius: 20px;
-    box-shadow: 0  10px 20px rgba(0, 0, 0, 0.2);
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.om-box,:hover{
+    box-shadow: 0  10px 20px rgba(0, 0, 0, 0.2);
 }
 
 article.om-box img{
