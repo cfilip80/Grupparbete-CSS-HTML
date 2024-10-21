@@ -173,6 +173,8 @@ main {
 article.employees img{
     border-radius: 20px;
     margin-top: 20px;
+    width: 150px;
+    height: 150px;
     
 }
 article.employees p{
