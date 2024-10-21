@@ -273,14 +273,14 @@ article:hover {
     flex-shrink: 1;
 }
 
-.logo-container {
+.logo-container-footer {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
 
-.logo-container img {
-    height: 180px;
+.logo-container-footer img {
+    height: 100px;
 }
 
 .divider {
