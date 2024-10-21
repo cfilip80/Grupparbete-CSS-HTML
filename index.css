@@ -3,13 +3,26 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items:center;
     min-height: 100vw;
     width: 100vw;
     background-color:white;
     box-sizing: border-box;
     margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+
+    width: 100%;
+    /* flex-grow: 1; Detta är korrigering på christians css, fyller när tillgängligt utrymme finns */
+    box-sizing: border-box;
+    
 }
 
 header {
@@ -21,12 +34,114 @@ header {
     background-color: white;
 }
 
+.nav-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 60px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    color: #333333;
+    margin: 10px 0;
+    
+}
+
+.nav-section h1 {
+    font-style: italic;
+    font-size: 28px;
+}
+
+.name-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.name-container h3 span {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    background-color: #479a71;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+}
+
+article div span {
+    /* font-style: italic; */
+    font-size: 20px;
+}
+
+.article-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 24%;
+    height: 550px;
+    background-color: white;
+    margin: 0;
+}
+
+.article-wrapper p {
+    text-align: center;
+}
+
+.article-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #f2f2f2;
+    margin: 5px 0;
+}
+
+article a {
+    align-self: flex-end;
+    text-decoration: none;
+    color: black;
+}
+
+article img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+  }
+
+article input {
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin: 10px 0 10px 0;
+}
+
+article:hover {
+    box-shadow: 0  10px 20px rgba(0, 0, 0, 0.2);
+    /* background-color: #f2f2f2;*/
+}
+
 .search-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 100%;
-    /* margin-left: 150px; */
     flex: 1;
 }
 
@@ -37,10 +152,6 @@ header {
     font-size: 18px;
     padding: 10px 20px;
     border-radius: 25px;
-    /* background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px; 
-    background-repeat: no-repeat; */
     border: 1px solid lightgray;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -97,29 +208,23 @@ header {
     gap: 100px;
     height: 50px;
     width: 100%;
-    background-color: #479a71;
+    background-image:linear-gradient(to right,#7fb401,#479a71);
+    /* background-color: #7fb401; */
     box-shadow: 0px  2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.nav-bar ul {
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    list-style: none;
-}
-
 .nav-bar a {
+    display: flex;
+    text-align: center;
     text-decoration: none;
-    color: #4bdf6c;
     color:#ffffff;
-    font-weight: bold;
-    font-family:cursive;
+    /* font-weight: bold; */
+    font-family: 'Roboto Slab', cursive;
 }
 
 .nav-bar a:hover {
     color:#479a71;
     background: white;
-    border-radius: 30px;
     text-decoration: underline;
     padding: 8px 12px;
 }
@@ -127,170 +232,24 @@ header {
 .nav-bar a.active {
     color:#479a71;
     background: white;
-    border-radius: 30px;
     padding: 8px 12px;
 }
-.nav-section {
+
+.banner-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 98%;
-    height: 60px;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    color: #333333;
-    margin-bottom: 10px;
-    
-}
-
-.nav-section h1 {
-    font-style: italic;
-    font-size: 28px;
-}
-
-.name-container {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0;
-}
-
-.name-container h3 span {
-    font-size: 24px;
-    font-weight: bold;
-    font-style: italic;
-    color: white;
-    background-color: #479a71;
-    padding: 5px 20px;
-    margin-bottom: 20px;
-}
-
-article div span {
-    /* font-style: italic; */
-    font-size: 20px;
-}
-
-
-.text-wrapper input {
-    font-weight: bold;
-    height: 50px;
-    width: 200px;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    margin: 10px 0 0 0;
-}
-
-.text-wrapper h3 {
-    font-size: 24px;
-    font-weight: bold;
-    font-style: italic;
-    color: white;
-}
-
-.text-wrapper span {
-    background-color: #479a71;
-    padding: 5px 20px;
-    margin-bottom: 20px;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0;
-    height: auto;
-    width: 85%;
-    /* flex-grow: 1; Detta är korrigering på christians css, fyller när tillgängligt utrymme finns */
-    box-sizing: border-box;
-    
-}
-
-.like-product {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: flex-end;
-    height: 50px;
-    width: 50px;
-    background-color: #f2f2f2;
-    border-radius: 30px;
-    margin: 10px 10px 0 0;
-}
-
-.article-wrapper {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 24%;
-    height: 550px;
-    background-color: white;
-    margin: 0;
-}
-
-.article-wrapper p {
-    text-align: center;
-}
-
-.article-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+    margin: 10px 10px;
     width: 100%;
-    box-sizing: border-box;
 }
 
-article {
+.banner {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
-    background-color: white;
-    border-radius: 20px;
-    border: 1px solid #f2f2f2;
-    margin: 5px 0;
+    margin-right: auto;
+    margin-left: 50px;
 }
 
-article a {
-    align-self: flex-end;
-    text-decoration: none;
-    color: black;
-}
-
-article img {
-    width: 85%;
-    height: 85%;
-    object-fit: contain;
-  }
-
-article input {
-    font-weight: bold;
-    height: 50px;
-    width: 200px;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    margin: 10px 0 10px 0;
-}
-
-article:hover {
-    box-shadow: 0  10px 20px rgba(0, 0, 0, 0.2);
-    /* background-color: #f2f2f2;*/
-}
-
-footer {
-    /* position: fixed; */
-    display: flex;
-    justify-content: center;
-    height: 80px;
-    width: 100%;
-    background-color: #479a71;
-    bottom: 0%;
-    box-sizing: border-box;
+.newsletter {
+    margin: 0 100px 0 10px;
 }
 
 
@@ -308,3 +267,56 @@ footer {
     display: flex;
     flex-shrink: 1;
 }
+
+footer {
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    /* background-color: #7fb401; */
+    background-image:linear-gradient(to right,#7fb401,#479a71);
+    bottom: 0%;
+    box-sizing: border-box;
+    margin-top: auto;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links-container {
+    display: flex;
+    margin: 0 10px;
+}
+
+.footer-links {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.footer-links li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-links li a{
+    color:black;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color:#ffffff;
+    cursor: pointer;
+}
+
