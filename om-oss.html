@@ -4,11 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Document</title>
 </head>
 <body>
+    <header>
+    <!--Här börjar header kod-->
+        <div class="search-container">
+            <input type="text" placeholder="Sök bland våra produkter...">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="logo-container-header">
+            <img class="company-logo" src="/images/fruktbolget-logo4.png">
+        </div>
+        <div class="icons-container">
+            <a href="#"><i class="far fa-heart" aria-hidden="true" style="font-size:36px;color:#479a71"></i></a>
+            <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:36px;color:#479a71"></i></a>
+            <a href="#"><i class="fa-regular fa-user" aria-hidden="true" style="font-size:36px;color:#479a71"></i></a>
+        </div>
+    </header>
+    <nav class="nav-bar">
+        
+            <a href="index.html">HEM</a></li>
+            <a href="produkter.html">PRODUKTER</a></li>
+            <a href="referenser.html">REFERENSER</a></li>
+            <a href="om-oss.html" class="active">OM OSS</a></li>
+            <a href="kontakt.html">KONTAKTA OSS</a></li>
+        
+    </nav>
+    <!--här tar header kodslut och main börjar-->
     <main class="petra-main">
         <section class="section-pitch">
             <h2>Vi säljer ekologisk frukt i värdsklass odlat nära dig</h2>
@@ -20,9 +46,9 @@
         <section class="om-section">
             <h2>Vi som arbetar på Fruktbolaget</h2>
         </section>
-
+        <div class="om-oss">
         <article class="om-box">
-            <h3>VD <br> Christian Filipsson</h3>
+            <h3>VD Tom Levin</h3>
             <img src="employees/VD.png" alt="det här är en bild">
             <p> Christian är företagets grundare och VD, med över 10 års erfarenhet inom livsmedelsindustrin. Han brinner för hållbarhet och ser till att företaget alltid ligger i framkant när det kommer till ekologiska produkter.</p>    
             <h4>christian.filipsson@fruktbolaget.se</h4> 
@@ -52,11 +78,49 @@
             <h4>mia.thomasson@fruktbolaget.se</h4>
         </article>
         <article class="om-box">
-            <h3>Ekonomichef <br> Nick Karlsson</h3>
+            <h3>Ekonomichef Nils Karlsson</h3>
             <img src="employees/ekonomi.png" alt="det här är en bild">
             <p>Nick håller koll på företagets finanser och ser till att budgetar följs och att ekonomin är i balans. Med över 12 års erfarenhet inom ekonomi och redovisning är han en trygg och pålitlig resurs.</p>   
             <h4>nick.karlsson@fruktbolaget.se</h4>
         </article>
+        </div>
     </main>
+    <!--Här tar main kod slut och footer kod början-->
+    <footer>
+        <div class="logo-container-footer">
+            <img src="/images/fruktbolget-logo4.png">
+        </div>
+        <div class="copyright"><p>&copy; <script>document.write(new Date().getFullYear())</script> Fruktbolaget.se - All Rights Reserved.</p></div>
+        <div class="divider-container">
+            <div class="divider"></div>
+        </div>
+        <div class="footer-wrapper">
+        <div class="footer-links-container">
+            <ul class="footer-links">
+                <li><a href="om-oss.html">Om Fruktbolaget</a></li>
+                <li><a href="kontakt.html">Kontakta oss</a></li>
+                <li><a href="produkter.html">Våra produkter</a></li>
+                <li><a href="referenser.html">Referenser</a></li>
+            </ul>
+        </div>
+        <div class="footer-links-container">
+            <ul class="footer-links">
+                <li><a href="#">Så handlar du på Fruktbolaget</a></li>
+                <li><a href="#">Säkerhet</a></li>
+                <li><a href="#">Jobba på Fruktbolaget</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-links-container">
+            <ul class="footer-links">
+                <li><a href="#">Integritetsinställningar</a></li>
+                <li><a href="#">Användaravtal</a></li>
+                <li><a href="#">Integritetspolicy</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+    
 </body>
 </html>

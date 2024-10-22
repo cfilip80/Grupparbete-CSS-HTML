@@ -117,18 +117,6 @@ header {
     padding: 8px 12px;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0;
-    height: auto;
-    width: 85%;
-    /* flex-grow: 1; Detta är korrigering på christians css, fyller när tillgängligt utrymme finns */
-    box-sizing: border-box;
-}
-
 footer {
     display: flex;
     flex-direction: column;
