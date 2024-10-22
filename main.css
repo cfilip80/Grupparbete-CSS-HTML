@@ -62,10 +62,14 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
-     
+    width: 85%;    
 }
-
+.om-oss{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;  
+}
 article.om-box img{
     border-radius: 20px;
     margin-top: 20px;
