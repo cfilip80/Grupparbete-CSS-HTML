@@ -366,7 +366,7 @@ footer {
 }
     
 /* För skärmar som är 768px eller mindre (typiskt mobiler) */
-@media (max-width: 768px) {
+@media all and (max-width: 768px) {
 
     body {
         display: flex;

@@ -18,6 +18,7 @@ header {
     justify-content: flex-start;
     height: 250px;
     width: 100%;
+    min-width: 250px;
     background-color: white;
 }
 
@@ -90,6 +91,7 @@ header {
     gap: 100px;
     height: 50px;
     width: 100%;
+    min-width: 250px;
     background-image:linear-gradient(to right,#7fb401,#479a71);
     box-shadow: 0px  2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -123,6 +125,7 @@ footer {
     justify-content: center;
     height: auto;
     width: 100%;
+    min-width: 250px;
     background-image:linear-gradient(to right,#7fb401,#479a71);
     bottom: 0%;
     box-sizing: border-box;
