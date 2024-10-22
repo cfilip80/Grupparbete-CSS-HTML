@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <div class="search-container">
+            <input type="text" placeholder="Sök bland våra produkter...">
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="logo-container-header">
+            <img class="company-logo" src="/images/fruktbolget-logo4.png">
+        </div>
+        <div class="icons-container">
+            <a href="#"><i class="far fa-heart" aria-hidden="true" style="font-size:36px;color:#479a71"></i></a>
+            <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:36px;color:#479a71"></i></a>
+            <a href="#"><i class="fa-regular fa-user" aria-hidden="true" style="font-size:36px;color:#479a71"></i></a>
+        </div>
+    </header>
+    <nav class="nav-bar">
+            <a href="index.html">HEM</a></li>
+            <a href="produkter.html">PRODUKTER</a></li>
+            <a href="referenser.html">REFERENSER</a></li>
+            <a href="om-oss.html">OM OSS</a></li>
+            <a href="kontakt.html" class="active">KONTAKTA OSS</a></li>
+    </nav>
     <main>
         <section class="kontakta-oss">
             <h3>Kom i kontakt med oss</h3>
@@ -40,6 +62,41 @@
 
                 <button type="submit">Skicka</button> 
         </article>
-    </main>   
+    </main>  
+    <footer>
+        <div class="logo-container-footer">
+            <img src="/images/fruktbolget-logo4.png">
+        </div>
+        <div class="copyright"><p>&copy; <script>document.write(new Date().getFullYear())</script> Fruktbolaget.se - All Rights Reserved.</p></div>
+        <div class="divider-container">
+            <div class="divider"></div>
+        </div>
+        <div class="footer-wrapper">
+        <div class="footer-links-container">
+            <ul class="footer-links">
+                <li><a href="om-oss.html">Om Fruktbolaget</a></li>
+                <li><a href="kontakt.html">Kontakta oss</a></li>
+                <li><a href="produkter.html">Våra produkter</a></li>
+                <li><a href="referenser.html">Referenser</a></li>
+            </ul>
+        </div>
+        <div class="footer-links-container">
+            <ul class="footer-links">
+                <li><a href="#">Så handlar du på Fruktbolaget</a></li>
+                <li><a href="#">Säkerhet</a></li>
+                <li><a href="#">Jobba på Fruktbolaget</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-links-container">
+            <ul class="footer-links">
+                <li><a href="#">Integritetsinställningar</a></li>
+                <li><a href="#">Användaravtal</a></li>
+                <li><a href="#">Integritetspolicy</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </div>
+        </div>
+    </footer> 
 </body>
 </html>
