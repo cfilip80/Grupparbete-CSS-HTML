@@ -42,7 +42,6 @@ header {
 
 .search-container input:focus {
     outline: none;
-    
 }
 
 .search-container input:hover {
@@ -165,7 +164,6 @@ footer {
 .logo-container-footer img {
     height: 100px;
 }
-
 
 .copyright {
     display: flex;
