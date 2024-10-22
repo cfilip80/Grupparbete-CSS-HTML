@@ -41,15 +41,14 @@ header {
 }
 
 .search-container input:focus {
-    outline: none;
-    
+    outline: none;  
 }
 
 .search-container input:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.header-icon {
+.logo-container-header {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -57,9 +56,8 @@ header {
     flex: 1;
 }
 
-.fruit-logo {
+.company-logo {
     height: 180px;
-
 }
 
 .logo-container-footer {
