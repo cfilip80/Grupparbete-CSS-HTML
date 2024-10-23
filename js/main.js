@@ -16,17 +16,3 @@ else if (isBurgerOpen) {
     }
 
 };
-
-// Get all the links in the navbar
-const navLinks = document.querySelectorAll('.links');
-
-// Get the current page's URL path (excluding domain)
-const currentPath = window.location.pathname;
-
-// Loop through the links and add the 'active' class to the link that matches the current path
-navLinks.forEach(link => {
-  // Check if the link's href matches the current page's path
-  if (link.getAttribute('href') === currentPath) {
-    link.classList.add('active');
-  }
-});

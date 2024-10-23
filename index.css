@@ -398,6 +398,16 @@ footer {
     display: none;
 }
 
+@media screen and (max-width: 1300px) {
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 768px;
+        margin-top: 20px;
+    }
+}
+
 /*--------------Mobile version-----------------*/
 
 @media screen and (max-width: 768px) {
