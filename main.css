@@ -1,3 +1,4 @@
+/*Det här är genomgående för samtliga Main (tror jag) */
 * {
     box-sizing: border-box;
 }
@@ -20,6 +21,8 @@ main {
     width: 85%;
     height:auto; /*Detta är korrigering på christians css, tar bort fast höjd på main, gör den dynamisk*/
 }
+
+/*Det här är Petras Main för Om-Oss*/
 .section-pitch{
     display: flex;
     flex-direction:column;
@@ -94,7 +97,7 @@ article.om-box p{
     cursor: pointer;
     font-size: 16px;
 }
-/*css för kontakt*/
+/*Det här är Petras Main för kontakt*/
 .kontakt-box{
     display:flex;
     flex-direction: column;
@@ -121,3 +124,5 @@ article.om-box p{
     color: #333333;
     margin: 10px 0;  
 }
+
+/* Här börjar Lauens Main för Referenser*/
