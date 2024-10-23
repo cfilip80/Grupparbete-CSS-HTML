@@ -19,7 +19,7 @@ main {
     margin-right: 5%;
     flex-wrap:wrap; 
     width: 85%;
-    height:auto; /*Detta är korrigering på christians css, tar bort fast höjd på main, gör den dynamisk*/
+    height: auto; /*Detta är korrigering på christians css, tar bort fast höjd på main, gör den dynamisk*/
 }
 
 /*Det här är Petras Main för Om-Oss*/
