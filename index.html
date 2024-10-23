@@ -9,11 +9,28 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="burger-menu-container">
+        <div class="burger-menu-btn"></div>
+    </div>
     <header>
         <div class="search-container">
             <input type="text" placeholder="Sök bland våra produkter...">
             <i class="fa fa-search"></i>
         </div>
+        <nav class="burger-menu">
+            <div class="icons-container-menu">
+                <a href="#"><i class="far fa-heart" aria-hidden="true" style="font-size:36px;color:#479a71"></i></a>
+                <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:36px;color:#479a71"></i></a>
+                <a href="#"><i class="fa-regular fa-user" aria-hidden="true" style="font-size:36px;color:#479a71"></i></a>
+            </div>
+            <div class="links">
+                <a href="index.html" class="active">HEM</a>
+                <a href="produkter.html">PRODUKTER</a>
+                <a href="referenser.html">REFERENSER</a>
+                <a href="om-oss.html">OM OSS</a>
+                <a href="kontakt.html">KONTAKTA OSS</a>
+            </div>
+        </nav>
         <div class="header-icon">
             <img class="fruit-logo" src="/images/fruktbolget-logo4.png">
         </div>
@@ -33,14 +50,14 @@
     <main>
         <div class="banner-container">
             <div class="banner">
-                <a href="produkter.html"><img src="/images/Våra aktuella erbjudanden3.png"></a>
+                <div><a href="produkter.html"><img src="/images/Våra aktuella erbjudanden3.png"></a></div>
             </div>
-            <div class="newsletter"><a href="#"><img src="/images/Nyhetsbrev.png"></a></div>
+            <div class="newsletter"><div><a href="#"><img src="/images/Nyhetsbrev.png"></a></div></div>
         </div>
         <nav class="nav-section">
             <h1>Vårt utbud av ekologiska frukter!</h1>
         </nav>
-        <div class="article-container">
+        <div class="row-container">
             <div class="article-wrapper">
                 <article>
                     <div class="name-container"><h3><span>Apelsin</span></h3></div>
@@ -85,31 +102,28 @@
             <div class="divider"></div>
         </div>
         <div class="footer-wrapper">
-        <div class="footer-links-container">
-            <ul class="footer-links">
-                <li><a href="om-oss.html">Om Fruktbolaget</a></li>
-                <li><a href="kontakt.html">Kontakta oss</a></li>
-                <li><a href="produkter.html">Våra produkter</a></li>
-                <li><a href="referenser.html">Referenser</a></li>
-            </ul>
-        </div>
-        <div class="footer-links-container">
-            <ul class="footer-links">
-                <li><a href="#">Så handlar du på Fruktbolaget</a></li>
-                <li><a href="#">Säkerhet</a></li>
-                <li><a href="#">Jobba på Fruktbolaget</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-        </div>
-        <div class="footer-links-container">
-            <ul class="footer-links">
-                <li><a href="#">Integritetsinställningar</a></li>
-                <li><a href="#">Användaravtal</a></li>
-                <li><a href="#">Integritetspolicy</a></li>
-                <li><a href="#">Cookies</a></li>
-            </ul>
-        </div>
+            <div class="footer-links-container footer-links-container-1">
+                <ul class="footer-links">
+                    <li><a href="om-oss.html">Om Fruktbolaget</a></li>
+                    <li><a href="kontakt.html">Kontakta oss</a></li>
+                    <li><a href="produkter.html">Våra produkter</a></li>
+                    <li><a href="referenser.html">Referenser</a></li>
+                    <li><a href="#">Inställningar</a></li>
+                    <li><a href="#">Användaravtal</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-container footer-links-container-2">
+                <ul class="footer-links">
+                    <li><a href="#">Regler</a></li>
+                    <li><a href="#">Säkerhet</a></li>
+                    <li><a href="#">Betalning</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Integritet</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
+    <script src="/js/main.js"></script>
 </body>
 </html>

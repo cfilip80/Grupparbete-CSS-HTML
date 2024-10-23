@@ -521,9 +521,8 @@ footer {
     }
 
     .linka a.active {
-        color:#479a71;
+        color:orangered;
         background: white;
-        padding: 8px 12px;
     }
 
     .icons-container-menu {
