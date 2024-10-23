@@ -125,12 +125,29 @@ article.om-box p{
     margin: 10px 0;  
 }
 
-/* Här börjar Lauens Main för Referenser*/
+/*-------Här börjar Lauens Main för Referenser---------------*/
 .container {
     display: flex;
     justify-content: space-around;
     width: 95%;
     margin-top: 20px;
+}
+
+#nav-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 60px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    color: #333333;
+    margin: 10px 0;
+}
+
+#nav-section h1 {
+    font-style: italic;
+    font-size: 28px;
 }
 
 #recensioner, #lämna-omdöme {
@@ -205,3 +222,5 @@ button {
 button:hover {
     background-color: #367a56;
 }
+
+/*--------- Slut på Lauens kod ------------*/
