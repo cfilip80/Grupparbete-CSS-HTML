@@ -18,9 +18,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     margin: 0;
-
     width: 100%;
-    /* flex-grow: 1; Detta är korrigering på christians css, fyller när tillgängligt utrymme finns */
     box-sizing: border-box;
     
 }
@@ -50,6 +48,7 @@ header {
 .nav-section h1 {
     font-style: italic;
     font-size: 28px;
+    font-family: 'Montserrat';
 }
 
 .name-container {
@@ -69,7 +68,6 @@ header {
 }
 
 article div span {
-    /* font-style: italic; */
     font-size: 20px;
 }
 
@@ -112,6 +110,10 @@ article a {
     align-self: flex-end;
     text-decoration: none;
     color: black;
+}
+
+article span {
+    font-family: 'Lora', serif;
 }
 
 article img {
@@ -222,7 +224,6 @@ article:hover {
     height: 50px;
     width: 100%;
     background-image:linear-gradient(to right,#7fb401,#479a71);
-    /* background-color: #7fb401; */
     box-shadow: 0px  2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -231,8 +232,8 @@ article:hover {
     text-align: center;
     text-decoration: none;
     color:#ffffff;
-    /* font-weight: bold; */
-    font-family: 'Roboto Slab', cursive;
+    font-weight: bold;
+    font-family: 'Lora', serif;
 }
 
 .nav-bar a:hover {
@@ -275,6 +276,11 @@ article:hover {
     display: flex;
     flex-shrink: 1;
 }
+
+.span-container span {
+    font-family: 'Lora', serif;
+}
+
 
 .button-container {
     display: flex;
@@ -407,16 +413,10 @@ footer {
     display: none;
 }
 
-
-/* @media screen and (max-width: 1300px) {
-    .banner-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        max-width: 768px;
-        margin-top: 20px;
-    }
-} */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; 
+  }
 
 /*--------------Mobile version-----------------*/
 
